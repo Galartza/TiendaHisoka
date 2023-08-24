@@ -1,16 +1,19 @@
 :root {
-    --rojo : #e71d36;
-    ---blanco: #fdfffc;
+    --rojo : #bf0603;
+    ---blanco: #f2e9e4;
 }
 *  {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+body {
+    background-color: var(---blanco);
+}
 .header {
     height: 4rem;
     width: 100%;
-    background-color: var(--rojo);
+    background-color: var(---blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,16 +34,22 @@
     font-size: .8rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(---blanco);
+    color: var(--rojo);
+}
+.logo {
+    font-size: 2rem;
+}
+.mts-logo {
+    font-size: 1rem;
 }
 #inicio {
-    height: 40rem;
+    height: 50rem;
     width: 100%;
     background-color: var(---blanco);
 
 }
 .inicio-contain {
-    height: 40rem;
+    height: 50rem;
     width: 100%;
     padding: 5rem;
     display: flex;
@@ -58,7 +67,7 @@
 .img-inicio {
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(80px 80px 5px  rgba(231, 29, 54, 0.45));
+    filter: drop-shadow(80px 80px 5px  rgba(191, 6, 3, 0.45));
 }
 .info-contain {
     height: auto;
@@ -67,10 +76,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 .title-inicio {
-    text-align: center;
+    text-align: start;
     font-size: 4rem;
     text-transform: uppercase;
     line-height: 3.5rem;
@@ -81,20 +90,181 @@
     margin-bottom: 1rem;
 }
 .btn-inicio {
-    height: 2.5rem;
-    width: 10rem;
-    border: none;
-    border-radius: 2px;
+    display: inline-block;
+    border-radius: 4px;
     background-color: var(--rojo);
-    color: white;
-    font-size: .8rem;
-    text-transform: uppercase;
-    transition: all 1s ease-in;
-}
-.btn-inicio:hover {
-    transform: translateY(-2px);
+    border: none;
+    color: var(---blanco);
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 140px;
+    transition: all 0.5s;
     cursor: pointer;
-    background-color: white;
-    color: var(--rojo);
-    box-shadow: 1px 1px 2px var(--rojo);
+    margin: 5px;
+   }
+   
+   .btn-inicio span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .btn-inicio span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   .btn-inicio:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+/* ----- variedades-cards ----- */
+.variedades {
+    height: 30rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 20% auto;
+    gap: .5rem;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.cards-variedades-1 {
+    background-image: url(../img/accesorios-removebg-preview.png);
+    background-color: #ffa01c8c;
+}
+.cards-variedades-2 {
+    background-image: url(../img/accesorios2-removebg-preview.png);
+    background-color: #bf060381;
+}
+.cards-variedades-3 {
+    background-image: url(../img/accesorios-removebg-preview.png);
+    background-color: #2ec4b581;
+}
+.cards-variedades-1,
+.cards-variedades-2,
+.cards-variedades-3 {
+    height: 25rem;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.sombra-cards {
+    height: 25rem;
+    width: 100%;
+    transition: all 1s;   
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.sombra-cards:hover {
+    height: 25rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774); 
+}
+.img-accesorio {
+    height: 25rem;
+    max-width: 100%;
+}
+/* Agrega estilos para el botón "Saber más" */
+.saber-mas-btn {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    margin: 2rem;
+}
+.saber-mas-btn {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  
+  .saber-mas-btn {
+    --primary-color: #111;
+    --hovered-color: var(---blanco);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .saber-mas-btn p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  .saber-mas-btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .saber-mas-btn p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Mas info";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .saber-mas-btn:hover::after {
+    width: 100%;
+  }
+  
+  .saber-mas-btn:hover p::before {
+    width: 100%;
+  }
+  
+  .saber-mas-btn:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+  .saber-mas-btn svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+/* ----- Section Shop ----- */
+#shop {
+    height: 40rem;
+    width: 100%;
 }
