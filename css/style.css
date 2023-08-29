@@ -11,7 +11,7 @@ body {
     background-color: var(---blanco);
 }
 .header {
-    height: 4rem;
+    height: 8rem;
     width: 100%;
     background-color: var(---blanco);
     display: flex;
@@ -21,6 +21,10 @@ body {
     position: fixed;
     z-index: 999;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+}
+.nav {
+    margin-top: 3rem;
+    margin-left: 6rem;
 }
 .nav-item {
     display: flex;
@@ -38,18 +42,43 @@ body {
 }
 .logo {
     font-size: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    margin-left: 4rem;
 }
 .mts-logo {
     font-size: 1rem;
 }
+.secion-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secion-link {
+    padding: 0 .5rem;
+}
+.input-buscar {
+    border-radius: 5px;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+}
+.icon-buscar {
+    position: absolute;
+    left: 150px;
+}
+.secion-link {
+    text-decoration: none;
+    color: var(--rojo);
+}
 #inicio {
-    height: 50rem;
+    height: 55rem;
     width: 100%;
     background-color: var(---blanco);
 
 }
 .inicio-contain {
-    height: 50rem;
+    height: 55rem;
     width: 100%;
     padding: 5rem;
     display: flex;
@@ -63,6 +92,7 @@ body {
 .img-contain {
     height: auto;
     width: 100%;
+    margin-top: 2rem;
 }
 .img-inicio {
     height: auto;
@@ -141,15 +171,15 @@ body {
 }
 
 .cards-variedades-1 {
-    background-image: url(../img/accesorios-removebg-preview.png);
+    background-image: url(../img/img-sinfondo/buzo-onep.png);
     background-color: #ffa01c8c;
 }
 .cards-variedades-2 {
-    background-image: url(../img/accesorios2-removebg-preview.png);
+    background-image: url(../img/img-sinfondo/accesorios-removebg-preview.png);
     background-color: #bf060381;
 }
 .cards-variedades-3 {
-    background-image: url(../img/accesorios-removebg-preview.png);
+    background-image: url(../img/img-sinfondo/accesorios2-removebg-preview.png);
     background-color: #2ec4b581;
 }
 .cards-variedades-1,
@@ -218,7 +248,7 @@ body {
     margin: 0;
     position: relative;
     font-size: 20px;
-    color: var(--primary-color)
+    color: var(---blanco)
   }
   
   .saber-mas-btn::after {
@@ -235,7 +265,7 @@ body {
   .saber-mas-btn p::before {
     position: absolute;
   /*   box-sizing: border-box; */
-    content: "Mas info";
+    content: "";
     width: 0%;
     inset: 0;
     color: var(--hovered-color);
@@ -265,6 +295,50 @@ body {
   }
 /* ----- Section Shop ----- */
 #shop {
-    height: 40rem;
+    height: 70rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-cards-producto {
+    height: 15rem;
+}
+.shop-contain {
+    height: 70rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 2rem 10rem;
+}
+.card-productos {
+    height: 10rem;
+}
+.title-producto {
+    text-align: center;
+}
+.containet-btn-producto {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+.btn-producto {
+    margin: auto;
+    border: none;
+    height: 1.5rem;
+    width: 10rem;
+    color: var(---blanco);
+    background-color: var(--rojo);
+}
+.banner-container {
+    height: 15rem;
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-info {
+    display: flex;
+    gap: 2rem;
 }
