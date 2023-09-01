@@ -11,20 +11,16 @@ body {
     background-color: var(---blanco);
 }
 .header {
-    height: 8rem;
+    height: 4rem;
     width: 100%;
     background-color: var(---blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     position: fixed;
     z-index: 999;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
-}
-.nav {
-    margin-top: 3rem;
-    margin-left: 6rem;
 }
 .nav-item {
     display: flex;
@@ -34,7 +30,7 @@ body {
 }
 .nav-link a{
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     font-size: .8rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -44,10 +40,10 @@ body {
     font-size: 2rem;
     line-height: 1rem;
     text-align: center;
-    margin-left: 4rem;
 }
 .mts-logo {
     font-size: 1rem;
+    color: var(--rojo);
 }
 .secion-contain {
     display: flex;
@@ -72,31 +68,26 @@ body {
     color: var(--rojo);
 }
 #inicio {
-    height: 55rem;
+    height: 50rem;
     width: 100%;
     background-color: var(---blanco);
 
 }
 .inicio-contain {
-    height: 55rem;
+    height: 50rem;
     width: 100%;
     padding: 5rem;
     display: flex;
     justify-content: space-evenly;
-    /* background-image: url(../img/fondo-inicio-f-removebg-preview\ \(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-     */
 }
 .img-contain {
     height: auto;
     width: 100%;
-    margin-top: 2rem;
 }
 .img-inicio {
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     filter: drop-shadow(80px 80px 5px  rgba(191, 6, 3, 0.45));
 }
 .info-contain {
@@ -171,7 +162,7 @@ body {
 }
 
 .cards-variedades-1 {
-    background-image: url(../img/img-sinfondo/buzo-onep.png);
+    background-image: url(../img/img-sinfondo/buzo-attack-on-titan.png);
     background-color: #ffa01c8c;
 }
 .cards-variedades-2 {
@@ -294,51 +285,49 @@ body {
     transition-delay: 0.2s;
   }
 /* ----- Section Shop ----- */
-#shop {
+#producto {
     height: 70rem;
-    width: 100%;
+    width: 70%;
     display: flex;
-    justify-content: center;
-}
-.img-cards-producto {
-    height: 15rem;
-}
-.shop-contain {
-    height: 70rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    margin: 2rem 10rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 .card-productos {
     height: 10rem;
+    flex: 0 0 calc(25% - 1rem);
+    justify-content: center;
 }
-.title-producto {
+.img-cards-producto {
+    height: 12rem;
+
+}
+.nombre-producto {
+    margin: .3rem 0;
     text-align: center;
 }
-.containet-btn-producto {
-    display: flex;
-    justify-content: center;
-    margin-top: .5rem;
+.precio-producto {
+    text-align: center;
 }
 .btn-producto {
-    margin: auto;
+    margin: 1rem;
     border: none;
     height: 1.5rem;
-    width: 10rem;
+    width: 12rem;
     color: var(---blanco);
     background-color: var(--rojo);
+    cursor: pointer;
 }
-.banner-container {
-    height: 15rem;
-    width: 100%;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.banner-info {
-    display: flex;
-    gap: 2rem;
+
+/* Estilos para el menú del carrito */
+.carrito-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+    z-index: 1000;
 }
