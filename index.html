@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Hisoka</title>
 
-    <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-      </head>
+    <link rel="stylesheet" href="lib/fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -33,27 +30,45 @@
             </nav>
             <div class="secion-contain">
                 <a class="secion-link" href="">inicia sesión</a>
-                <a class="secion-link" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03071e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
-                    <span id="cart-counter">0</span>
-                </a>
+                <div class="container-icon">
+                    <i class="icon-cart fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="contador-productos">
+                    <span id="contador-productos">
+                        0
+                    </span>
+                </div>
+                
+                <div class="container-cart-productos hidden-cart">
+                    <div class="cart-producto">
+                        <div class="info-cart-producto">
+                           <span class="cantidad-producto-carrito">
+                            1
+                           </span>
+                           <p class="titulo-producto-carrito">
+                            Buzo Attack on Titan
+                           </p>
+                           <span class="precio-producto-carrito">
+                            $8000
+                           </span>
+                        </div>
+                        <i class="icon-close fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">
+                            $8000
+                        </span>
+                    </div>
+                </div>
             </div>
         </header>
 
-       <div class="contianer-nav">
-
-       </div> 
 
         <div class="inicio-contain">
             <div class="info-contain">
                 <h2 class="animate__animated animate__slideInDown title-inicio">Hisoka Morteros</h2>
-                <p class="animate__animated animate__zoomInUp paragraph-inicio">Tu tienda preferida</p>
+                <p class="animate__animated animate__zoomInUp paragraph-inicio">Tienda de accesorios de animé y más.</p>
                 <button class="animate__animated animate__fadeIn btn-inicio">
                     <span>Contactanos</span>
                   </button>
@@ -64,18 +79,18 @@
         </div>
     </section>
 
-    <div class="animate__animated animate__slideInUp variedades">
-        <div class="cards-variedades-1 sombra-cards">
+    <div class="variedades">
+        <div class="animate__animated animate__zoomIn cards-variedades-1 sombra-cards">
             <button class="saber-mas-btn">
                 <p>Ropa</p>
             </button>
         </div>
-        <div class="cards-variedades-2 sombra-cards">
+        <div class="animate__animated animate__zoomIn cards-variedades-2 sombra-cards">
             <button class="saber-mas-btn">
                 <p>Accesorios</p>
             </button>
         </div>
-        <div class="cards-variedades-3 sombra-cards">
+        <div class="animate__animated animate__zoomIn cards-variedades-3 sombra-cards">
             <button class="saber-mas-btn">
                 <p>Mas</p>
             </button>
@@ -83,12 +98,232 @@
     </div>
 
     <!-- Section Shop -->
+    <section id="shop">
+        <div class="container-productos" id="producto">
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/buzo-attack-on-titan.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Buzo <br> Attack on Titan</h2>
+                    <p class="price">$8000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/almohada-akatsuki.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Almohada <br> Akatstuki</h2>
+                    <p class="price">$1800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/buzo-bts.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Buzo <br> BTS</h2>
+                    <p class="price">$8000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/aros-tanjiro.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Aros <br> Kamado Tanjiro</h2>
+                    <p class="price">$800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/buzo-naruto-rojo.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Buzo <br> Naruto</h2>
+                    <p class="price">$8000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/taza-gon.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Taza <br> Gon</h2>
+                    <p class="price">$1800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/buzo-death-note.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Buzo <br> Death Note</h2>
+                    <p class="price">$8000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/potara-dragon-ball-amarillo.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Potara <br>Dragon Ball Z</h2>
+                    <p class="price">$800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/buzo-one-piece.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Buzo <br>One Piece</h2>
+                    <p class="price">$8000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/falda-negra.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Falda <br> Negra</h2>
+                    <p class="price">$4200</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/remera-akatsuki.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Remera <br> Akatstuki</h2>
+                    <p class="price">$3700</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="img/img-sinfondo/taza-one-piece.png" alt="producto">
+                </figure>
+                <div class="info-producto">
+                    <h2 class="title-producto">Taza <br>One Piece</h2>
+                    <p class="price">$1800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-informacion-envios">
+        <div class="info-envio">
+            <div class="container-icono envio">
+                <i class="icon-envio fa-solid fa-truck"></i>
+            </div>
+            <div class="container-info">
+                <h4 class="title-envios">Enviamos tu compra</h4>
+                <p class="parrafo-envio">Entregas a todo el pais</p>
+            </div>
+        </div>
+       
+        <div class="linea-divisoria-envios">
+            <p>|</p>
+        </div>
+
+        <div class="info-envio">
+            <div class="container-icono envio">
+                <i class="icon-envio fa-solid fa-credit-card"></i>
+            </div>
+            <div class="container-info">
+                <h4 class="title-envios">Pagá como quieras</h4>
+                <p class="parrafo-envio">Tarjetas de crédito o efectivo</p>
+            </div>
+        </div>
+
+        <div class="linea-divisoria-envios">
+            <p>|</p>
+        </div>
+
+        <div class="info-envio">
+            <div class="container-icono envio">
+                <i class="icon-envio fa-solid fa-lock"></i>
+            </div>
+            <div class="container-info">
+                <h4 class="title-envios">Comprá con seguridad</h4>
+                <p class="parrafo-envio">Tus datos siempre protegidos</p>
+            </div>
+        </div>
+    </div>
 
 
-    <script src="js/main.js"></script>
+    <footer class="footer">
+        <div class="container-info-footer">
+            <div class="container-navegacion">
+                <h3>Navegacion</h3>
+                <a href="">Inicio</a>
+                <a href="">Productos</a>
+                <a href="">Contacto</a>
+            </div>
+        </div>
+        <div class="container-metodos-pago-envios">
+            <div class="metodos-pago">
+                <h3>Medios de pago</h3>
+                <figure class="container-metodos-formas">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" alt="">
+                </figure>
+            </div>
+            <div class="formas-envio">
+                <h3>Formas de envio</h3>
+                <figure class="container-metodos-formas">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/table@2x.png" alt="">
+                    <img class="img-tarjetas-pago" src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="container-contactanos-email">
+            <h3>Contactanos</h3>
+            <p><i class="fa-solid fa-envelope"></i> hisokamorteros@gmail.com</p>
+        </div>
+        <div class="container-redes-sociales">
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="newlaster">
+                <h3>newlaster</h3>
+                <input type="search" placeholder="email"><button><i class="icon-enviar fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>todos los derechos reservados</p>
+    </div>
+
+
+    <!-- <script src="js/data.js"></script> -->
+    <script src="lib/fontawesome-free-6.4.0-web/js/all.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
