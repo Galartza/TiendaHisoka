@@ -81,6 +81,103 @@ body {
     background-color: var(--primary-color);
     cursor: pointer;
 }
+/* -------- MENU DESPLEGABLE --------- */
+.hamburger-menu {
+    display: none;
+}
+.bar {
+    height: 3px;
+    width: 20px;
+    background-color: var(--negro);
+    margin-bottom: 5px;
+    display: none;
+}
+@media (max-width: 860px) {
+    .logo {
+        margin-left: 8rem;
+    }
+    .nav {
+        display: none;
+    }
+    .container-menu-movile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        height: 700px;
+        width: 400px;
+        background-color: var(---blanco);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    }
+    .menu-visible {
+        display: block;
+    }
+    .items-menu-movile {
+        height: 15rem;
+        display: grid;
+        padding: 2rem;
+    }
+    .items-menu-movile a {
+        width: 50%;
+        text-decoration: none;
+        padding: 0 .5rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--rojo);
+        transition: all 0.4s;
+    }
+    .items-menu-movile a:hover {
+        width: 50%;
+        background-color: var(--rojo);
+        color: var(---blanco);
+        padding: .1rem .1rem; 
+    }
+    .icon-close-menu-movile {
+        font-size: 2rem;
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+    }
+    .icon-close-menu-movile:hover {
+        color: var(--rojo);
+        cursor: pointer;
+    }
+    .container-btn-inicio-sesion {
+        display: block;
+    }
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+
+    }
+    .secion-link {
+        display: none;
+    }
+    .secion-link-menu-movile {
+        position: absolute;
+        right: 35%;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(---blanco);
+        background-color: var(--rojo);
+        padding: .8rem;
+        border-radius: .2rem;
+    }
+    .container-icon {
+        position: relative;
+    }
+    .icon-cart {
+        position: relative;
+        right: 0;
+        margin-left: 6rem;
+    }
+}
 #inicio {
     height: 50rem;
     width: 100%;
