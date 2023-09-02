@@ -447,6 +447,25 @@ img {
     cursor: pointer;
     border-radius: .2rem;
 }
+@media (max-width:860px) {
+    #shop {
+        margin: 2rem;
+    }
+    .container-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .8rem;
+    }
+}
+@media (max-width:660px) {
+    #shop {
+        margin: 1rem;
+    }
+    .container-productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* ---------- TOTAL A PAGAR MENU ---------- */
 .icon-cart{
     width: 30px;
@@ -568,7 +587,25 @@ img {
     font-size: 2rem;
     text-align: center;
 }
-
+@media (max-width:490px) {
+    .container-informacion-envios {
+        height: 20rem;
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .linea-divisoria-envios {
+        display: none;
+    }
+    .logo {
+        font-size: 1.5rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+}
 /* ---------- FOOTER ---------- */
 .footer {
     height: 20rem;
@@ -646,6 +683,30 @@ img {
     align-items: center;
     font-size: .8rem;
     font-weight: 200;
+}
+@media (max-width:860px) {
+    .footer {
+        height: 40rem;
+        width: 100%;
+        background-color: var(--rojoMenosIntenso);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1rem;
+        padding: 4rem;
+    }
+}
+@media (max-width:490px) {
+    .footer {
+        height: 40rem;
+        width: 100%;
+        background-color: var(--rojoMenosIntenso);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 1rem;
+        padding: 4rem;
+    }
 }
 /* .card-productos {
     height: 10rem;
