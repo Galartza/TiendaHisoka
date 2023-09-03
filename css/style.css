@@ -188,10 +188,9 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 2rem;
     }
     .logo-contain {
-        margin: 0 -2rem;
+        margin: 0 -3rem;
         width: auto;
         display: flex;
         justify-content: start;
@@ -200,8 +199,12 @@ body {
         display: flex;
         justify-content: end;
     }
+    .hamburger-menu {
+        padding: 0 0 0 1rem;
+    }
     .icon-cart {
         margin: 0;
+        padding: 0 1rem 0 0;
     }
 }
 #inicio {
