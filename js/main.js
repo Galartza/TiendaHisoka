@@ -1,15 +1,15 @@
-const btnCart = document.querySelector('.container-icon');
-const containerCartProductos = document.querySelector('.container-cart-productos');
-const btnAbrirMenu = document.querySelector('.hamburger-menu');
-const containerMenuMobile = document.querySelector('.container-menu-movile');
 
-btnCart.addEventListener('click', () => {
-    containerCartProductos.classList.toggle('hidden-cart')
-});
+    const AbrirMenu = document.querySelector('.hamburger-menu');
+    const CerrarMenu = document.querySelector('.icon-close-menu-movile');
+    const containerMenuMobile = document.querySelector('.container-menu-movile');
 
-btnAbrirMenu.addEventListener('click', () => {
-    containerMenuMobile.classList.toggle('menu-visible')
-});
+    AbrirMenu.addEventListener('click', () =>{
+      containerMenuMobile.classList.add('menu-visible');
+    });
+    CerrarMenu.addEventListener('click', () => {
+      containerMenuMobile.classList.remove('menu-visible');
+    });
+  
 // // Obtener elementos del DOM
 // const productoSeccion = document.getElementById('producto');
 
