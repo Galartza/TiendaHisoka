@@ -94,9 +94,9 @@ body {
 }
 @media (max-width: 860px) {
     .header {
-        max-width: 100%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .logo {
         margin-left: 8rem;
@@ -181,6 +181,26 @@ body {
         position: relative;
         right: 0;
         margin-left: 6rem;
+    }
+}
+@media (max-width:420px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-contain {
+        margin: 0 -2rem;
+        width: auto;
+        display: flex;
+        justify-content: start;
+    }
+    .secion-contain {
+        display: flex;
+        justify-content: end;
+    }
+    .icon-cart {
+        margin: 0;
     }
 }
 #inicio {
