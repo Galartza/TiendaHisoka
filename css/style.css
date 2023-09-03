@@ -21,7 +21,7 @@ body {
     width: 100%;
     background-color: var(---blanco);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
     position: fixed;
@@ -52,6 +52,12 @@ body {
     font-size: 2rem;
     line-height: .8rem;
     text-align: center;
+}
+.logo-contain h1{
+    font-size: 1.6rem;
+}
+.logo-contain i {
+    font-size: .4rem;
 }
 .mts-logo {
     font-size: 1rem;
@@ -97,6 +103,12 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+    .logo-contain h1{
+        font-size: 1.4rem;
+    }
+    .logo-contain i {
+        font-size: .4rem;
     }
     .logo {
         margin-left: 8rem;
@@ -183,6 +195,12 @@ body {
         margin-left: 6rem;
     }
 }
+@media (max-width:620px) {
+        .logo-contain h1,
+    .logo-contain i{
+        font-size: .9rem;
+    }
+}
 @media (max-width:420px) {
     .header {
         width: 100%;
@@ -190,21 +208,22 @@ body {
         justify-content: space-between;
     }
     .logo-contain {
-        margin: 0 -3rem;
-        width: auto;
+        margin: 0 -2rem;
         display: flex;
         justify-content: start;
+    }
+    .logo-contain h1{
+        font-size: .8rem;
+    }
+    .logo-contain i {
+        font-size: .4rem;
     }
     .secion-contain {
         display: flex;
         justify-content: end;
     }
-    .hamburger-menu {
-        padding: 0 0 0 1rem;
-    }
     .icon-cart {
         margin: 0;
-        padding: 0 1rem 0 0;
     }
 }
 #inicio {
