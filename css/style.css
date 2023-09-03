@@ -188,6 +188,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        padding: 2rem;
     }
     .logo-contain {
         margin: 0 -2rem;
