@@ -1,15 +1,17 @@
+const abrirMenu = document.querySelector('.abrir');
+const cerrarMenu = document.querySelector('.icon-close-menu-movile');
+const containerMenuMobile = document.querySelector('.container-menu-movile');
+const overlay = document.querySelector('.overlay');
 
-    const AbrirMenu = document.querySelector('.abrir');
-    const CerrarMenu = document.querySelector('.icon-close-menu-movile');
-    const containerMenuMobile = document.querySelector('.container-menu-movile');
+abrirMenu.addEventListener('click', () => {
+    containerMenuMobile.classList.add('menu-visible');
+    overlay.style.display = 'block'; // Muestra la capa de superposición
+});
 
-    AbrirMenu.addEventListener('click', () =>{
-      containerMenuMobile.classList.add('menu-visible');
-    });
-    CerrarMenu.addEventListener('click', () => {
-      containerMenuMobile.classList.remove('menu-visible');
-    });
-  
+cerrarMenu.addEventListener('click', () => {
+    containerMenuMobile.classList.remove('menu-visible');
+    overlay.style.display = 'none'; // Oculta la capa de superposición
+});
 // // Obtener elementos del DOM
 // const productoSeccion = document.getElementById('producto');
 
