@@ -1,17 +1,25 @@
-const abrirMenu = document.querySelector('.abrir');
-const cerrarMenu = document.querySelector('.icon-close-menu-movile');
-const containerMenuMobile = document.querySelector('.container-menu-movile');
-const overlay = document.querySelector('.overlay');
+// const abrirMenu = document.querySelector('.abrir');
+// const cerrarMenu = document.querySelector('.icon-close-menu-movile');
+// const containerMenuMobile = document.querySelector('.container-menu-movile');
+// const overlay = document.querySelector('.overlay');
 
-abrirMenu.addEventListener('click', () => {
-    containerMenuMobile.classList.add('menu-visible');
-    overlay.style.display = 'block'; // Muestra la capa de superposición
+// abrirMenu.addEventListener('click', () => {
+//     containerMenuMobile.classList.add('menu-visible');
+//     overlay.style.display = 'block'; // Muestra la capa de superposición
+// });
+
+// cerrarMenu.addEventListener('click', () => {
+//     containerMenuMobile.classList.remove('menu-visible');
+//     overlay.style.display = 'none'; // Oculta la capa de superposición
+// });
+
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+mobileMenuIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
 });
 
-cerrarMenu.addEventListener('click', () => {
-    containerMenuMobile.classList.remove('menu-visible');
-    overlay.style.display = 'none'; // Oculta la capa de superposición
-});
 // // Obtener elementos del DOM
 // const productoSeccion = document.getElementById('producto');
 
