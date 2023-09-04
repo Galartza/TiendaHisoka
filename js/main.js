@@ -1,5 +1,5 @@
 
-    const AbrirMenu = document.querySelector('.hamburger-menu');
+    const AbrirMenu = document.querySelector('.abrir');
     const CerrarMenu = document.querySelector('.icon-close-menu-movile');
     const containerMenuMobile = document.querySelector('.container-menu-movile');
 
