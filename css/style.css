@@ -17,6 +17,9 @@ a {
     text-decoration: none;
     list-style: none;
 }
+.btn-comrpar {
+    color: var(---blanco);
+}
 body {
     background-color: var(---blanco);
     font-family: 'Roboto', sans-serif;
