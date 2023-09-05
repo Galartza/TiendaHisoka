@@ -475,12 +475,13 @@ img {
     height: 300px;
     object-fit: contain;
     transition: all 0.8s;
+    filter: drop-shadow(3px 3px 5px  rgba(0, 0, 0, 0.95));
 }
 .producto figure {
     overflow: hidden;
 }
 .producto:hover img {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 .title-producto {
     line-height: 1rem;
