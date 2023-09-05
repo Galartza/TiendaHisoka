@@ -21,112 +21,29 @@ body {
     background-color: var(---blanco);
     font-family: 'Roboto', sans-serif;
 }
-/* Estilos para la barra de navegación */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-.right-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.cart-icon {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 1rem;
-}
-
-/* Estilos para el menú móvil */
-.mobile-menu {
-    display: none;
-    height: 100%;
-    width: 60%;
+.navbar {
     background-color: var(---blanco);
-    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.30);
-    color: #fff;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    z-index: 999;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
-.mobile-menu.active {
+.navbar-nav {
+    padding: 0 2rem;
+}
+.container-fluid {
     display: flex;
-}
-
-.mobile-menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        list-style: none;
-        display: block;
-        justify-content: center;
-        margin: 0;
-        padding: 3rem;
-    }
-    .menu li {
-        margin-bottom: 2rem;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .right-menu {
-        display: none;
-    }
-    .cart-icon {
-        display: none;
-    }
-}
-.header {
-    height: 4rem;
+    justify-content: space-between;
     width: 100%;
-    background-color: var(---blanco);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    position: fixed;
-    z-index: 999;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+    height: 4rem;
 }
-.nav-link a{
-    text-decoration: none;
-    padding: 0 .5rem;
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: bold;
+li .nav-link {
     color: var(--rojo);
     transition: all 0.4s;
 }
-.nav-link a:hover {
+li .nav-link:hover {
     background-color: var(--rojo);
     color: var(---blanco);
-    padding: .6rem .5rem;
+    border-radius: 5px;
 }
+
 .logo {
     font-size: 2rem;
     line-height: .8rem;
@@ -141,176 +58,6 @@ nav {
 .mts-logo {
     font-size: 1rem;
     color: var(--rojo);
-}
-.secion-contain {
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.secion-link {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: .7rem;
-    text-decoration: none;
-    color: var(---blanco);
-    background-color: var(--rojo);
-    padding: .8rem;
-    border-radius: .2rem;
-}
-.secion-link:hover {
-    background-color: var(--rojoMenosIntenso);
-}
-.icon-shop {
-    font-size: 1.4rem;
-    background-color: var(--primary-color);
-    cursor: pointer;
-}
-/* -------- MENU DESPLEGABLE --------- */
-.hamburger-menu {
-    display: none;
-}
-.bar {
-    height: 3px;
-    width: 20px;
-    background-color: var(--negro);
-    margin-bottom: 5px;
-    display: none;
-}
-.container-menu-close {
-    display: none;
-}
-
-@media (max-width: 860px) {
-    .header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo-contain h1{
-        font-size: 1.4rem;
-    }
-    .logo-contain i {
-        font-size: .4rem;
-    }
-    .nav {
-        display: none;
-    }
-    .container-menu-movile {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-        height: 100%;
-        width: 400px;
-        background-color: var(---blanco);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    }
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.25);
-        z-index: 0;
-
-    }
-    .menu-visible {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        height: 2000px;
-    }
-    .items-menu-movile {
-        height: 20rem;
-        padding:5rem 0 0 3rem;
-    }
-    .items-menu-movile li, a {
-        width: 50%;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: var(--rojo);
-        transition: all 0.4s;
-    }
-    .items-menu-movile a:hover {
-        width: 50%;
-        background-color: var(--rojo);
-        color: var(---blanco);
-        padding: 1rem;
-    }
-    .icon-close-menu-movile {
-        font-size: 2rem;
-        padding: 1rem;
-        position: absolute;
-        right: 0;
-    }
-    .icon-close-menu-movile:hover {
-        color: var(--rojo);
-        cursor: pointer;
-    }
-    .container-btn-inicio-sesion {
-        display: block;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    .abrir {
-        cursor: pointer;
-    }
-    .bar {
-        display: block;
-    }
-
-    .secion-link-menu-movile {
-        text-align: center;
-        position: absolute;
-        right: 25%;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1rem;
-        text-decoration: none;
-        color: var(---blanco);
-        background-color: var(--rojo);
-        padding: .8rem;
-        border-radius: .2rem;
-    }
-    .container-icon {
-        position: relative;
-    }
-    .icon-cart {
-        position: relative;
-        right: 0;
-    }
-}
-@media (max-width:620px) {
-        .logo-contain h1,
-    .logo-contain i{
-        font-size: .9rem;
-    }
-}
-@media (max-width:420px) {
-    .header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo-contain h1{
-        font-size: .8rem;
-    }
-    .logo-contain i {
-        font-size: .4rem;
-    }
-    .secion-contain {
-        display: flex;
-        justify-content: end;
-    }
-    .icon-cart {
-        margin: 0;
-    }
 }
 
 #inicio {
@@ -1034,3 +781,6 @@ img {
     background-color: var(--rojo);
     cursor: pointer;
 } */
+.navbar-toggle {
+    border: none;
+}
