@@ -30,6 +30,7 @@ body {
 }
 .navbar-nav {
     padding: 0 2rem;
+    text-transform: uppercase;
 }
 .container-fluid {
     display: flex;
@@ -40,6 +41,7 @@ body {
 li .nav-link {
     color: var(--rojo);
     transition: all 0.4s;
+    font-weight: 600;
 }
 li .nav-link:hover {
     background-color: var(--rojo);
@@ -49,6 +51,7 @@ li .nav-link:hover {
 
 .logo {
     font-size: 2rem;
+    font-weight: 700;
     line-height: .8rem;
     text-align: center;
 }
@@ -464,12 +467,12 @@ img {
     transform: scale(1.4);
 }
 .title-producto {
-    line-height: normal;
+    line-height: 1rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 .price {
-    font-weight: bold;
+    font-weight: 600;
 }
 .info-producto {
     padding: 15px 30px;
@@ -667,17 +670,17 @@ img {
 .container-navegacion a,
 .container-contactanos-email p{
     text-decoration: none;
-    color: var(---blanco);
-    font-weight: 200;
+    color: var(--negro);
+    font-weight: 400;
 }
 .container-redes-sociales a  {
     text-decoration: none;
-    color: var(---blanco);
+    color: var(--negro);
     font-size: 2rem;
     transition: all 0.5s;
 }
 .container-redes-sociales a:hover {
-    color: var(--negro);
+    color: var(---blanco);
 }
 .newlaster input {
     height: 2.2rem;
@@ -758,32 +761,4 @@ img {
     .mts-logo {
         font-size: .8rem;
     }
-}
-/* .card-productos {
-    height: 10rem;
-    flex: 0 0 calc(25% - 1rem);
-    justify-content: center;
-}
-.img-cards-producto {
-    height: 12rem;
-
-}
-.nombre-producto {
-    margin: .3rem 0;
-    text-align: center;
-}
-.precio-producto {
-    text-align: center;
-}
-.btn-producto {
-    margin: 1rem;
-    border: none;
-    height: 1.5rem;
-    width: 12rem;
-    color: var(---blanco);
-    background-color: var(--rojo);
-    cursor: pointer;
-} */
-.navbar-toggle {
-    border: none;
 }
