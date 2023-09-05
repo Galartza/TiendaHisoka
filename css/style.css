@@ -739,7 +739,7 @@ img {
 }
 @media (max-width:490px) {
     .footer {
-        height: 40rem;
+        height: 50rem;
         width: 100%;
         background-color: var(--rojoMenosIntenso);
         display: grid;
