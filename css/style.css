@@ -55,6 +55,9 @@ li .nav-link:hover {
     line-height: .8rem;
     text-align: center;
 }
+.logo a {
+    color: var(--negro);
+}
 .logo-contain h1{
     font-size: 1.6rem;
 }
@@ -62,8 +65,9 @@ li .nav-link:hover {
     font-size: .4rem;
 }
 .mts-logo {
-    font-size: 1rem;
+    font-size: .8rem;
     color: var(--rojo);
+    text-transform: uppercase;
 }
 
 #inicio {
@@ -96,7 +100,7 @@ li .nav-link:hover {
     height: auto;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 1rem;
     margin: auto;
     color: var(---blanco);
@@ -104,23 +108,29 @@ li .nav-link:hover {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
 } 
 .title-inicio {
     text-align: start;
     font-size: 4rem;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 3.5rem;
     margin-bottom: 1rem;
 }
 .paragraph-inicio {
     font-size: 1.6rem;
+    font-weight: 100;
     margin-bottom: 1rem;
     text-align: start;
 }
 @media (max-width:860px) {
     .info-contain {
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
         width: 500px;
         padding: 1rem;
         margin: auto;
@@ -145,7 +155,7 @@ li .nav-link:hover {
     }
     .info-contain {
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: rgba(0, 0, 0, 0.75);
         width: 500px;
         padding: 1rem;
         margin: auto;
@@ -183,7 +193,7 @@ li .nav-link:hover {
     }
     .info-contain {
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: rgba(0, 0, 0, 0.75);
         width: 500px;
         padding: 1rem;
         margin: auto;
@@ -197,7 +207,7 @@ li .nav-link:hover {
     }
     .img-inicio {
         display: flex;
-        height: 600px;
+        height: 580px;
         width: 100%;
 
     }
@@ -210,9 +220,12 @@ li .nav-link:hover {
     }
 }
 @media (max-width: 490px) {
+    .paragraph-inicio {
+        line-height: 1.2rem;
+    }
     .img-inicio {
         height: 500px;
-        width: 250px;
+        width: 280px;
     }
 }
 .btn-contacto {
