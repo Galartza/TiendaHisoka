@@ -215,6 +215,9 @@ li .nav-link:hover {
         width: 250px;
     }
 }
+.btn-contacto {
+    color: var(---blanco);
+}
 .btn-inicio {
     display: inline-block;
     border-radius: 4px;
@@ -513,96 +516,6 @@ img {
         font-size: .8rem;
     }
 }
-/* ---------- TOTAL A PAGAR MENU ---------- */
-.icon-cart{
-    width: 30px;
-    height: 30px;
-    stroke: var(--primary-color);
-}
-.icon-cart:hover {
-    cursor: pointer;
-}
-.contador-productos {
-    position: absolute;
-    top:55%;
-    right: 0;
-    background-color: var(--rojo);
-    color: var(---blanco);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    
-}
-#contador-productos {
-    font-size: 12px;
-}
-.container-cart-productos {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: var(---blanco);
-    width: 500px;
-    z-index: 1;
-    padding: .5rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-.cart-producto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
-}
-.info-cart-producto {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 0.8;
-}
-.titulo-producto-carrito {
-    font-size: 20px;
-}
-.precio-producto-carrito {
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
-.cantidad-producto-carrito {
-    font-weight: 400;
-    font-size: 20px;
-}
-.icon-close {
-    font-size: 1.5rem;
-}
-.icon-close:hover {
-    color: var(--rojo);
-    cursor: pointer;
-}
-.cart-total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-}
-.cart-total h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-.total-pagar {
-    font-size: 20px;
-    font-weight: 900;
-}
-.container-icon {
-    position: relative;
-}
-.hidden-cart {
-    display: none;
-}
-
 /* --------- INFORMACION DE ENVIOS ---------- */
 
 .container-informacion-envios {
